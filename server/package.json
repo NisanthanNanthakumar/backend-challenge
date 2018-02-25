@@ -9,7 +9,7 @@
     },
     "scripts": {
         "server": "nodemon index.js",
-        "dev": "concurrently \"npm run server\" \"npm run client\"  \"npm run webhook\""
+        "tests": "jest"
     },
     "author": "Nisanthan Nanthakumar",
     "license": "ISC",
@@ -17,5 +17,9 @@
         "body-parser": "^1.18.2",
         "express": "^4.16.2",
         "mongoose": "^4.13.7"
+    },
+    "devDependencies": {
+        "jest": "^22.4.2",
+        "supertest": "^3.0.0"
     }
 }

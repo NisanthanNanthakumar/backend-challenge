@@ -1,6 +1,6 @@
 exports.handleError = (err, res) => {
   res.status(400).send({
-    message: "Request failed",
+    message: "Bad Request",
     description: err
   });
 };
