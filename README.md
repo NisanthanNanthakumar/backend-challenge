@@ -32,7 +32,7 @@ npm start
 
 This starts up a local server on port 5000. Navigate to [http://localhost:5000](http://localhost:5000).
 
-Alternatively for dev, instead of ``` npm start```
+Alternatively for dev, instead of `npm start`
 
 ```shell
 npm install -g nodemon
@@ -50,7 +50,18 @@ npm run tests
 
 ## API Specifications
 
-Your solution should start an HTTP service on any port you'd like. Please include instructions on how to start your service (so that we can test the functionality!)
+Any route not detailed below will return an
+
+**Error Response**
+
+Status Code **404**
+
+```javascript
+{
+    "message": "Not Found",
+    "description": "The requested resource doesn't exist."
+}
+```
 
 ### `/messages` Resource
 
@@ -60,7 +71,7 @@ Your solution should start an HTTP service on any port you'd like. Please includ
 
 **URL Params** None
 
-**Data Params** 
+**Data Params**
 
 ```javascript
 {
@@ -128,6 +139,7 @@ Status Code: **200**
     ]
 }
 ```
+
 Here is a conversation with two messages.
 
 **Error Response:**
@@ -162,6 +174,7 @@ Status Code: **201**
     "description": "New conversation has been created."
 }
 ```
+
 Here a new conversation thread is created.
 
 **Error Response:**
