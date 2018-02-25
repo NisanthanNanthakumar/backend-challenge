@@ -1,8 +1,51 @@
 # Ada Support Backend Developer Challenge
 
+
 Hello there! :wave:
 
 This is our challenge for potential new backend developer team members. We'd like to see how you tackle an open-ended project in Ada's domain (chat). We don't mind what language you use to complete the challenge. Feel free to try something new, or to use technology that you're already comfortable with. We're partial to Python here at Ada, but please feel free to use whatever you'd like :smile:
+
+## Installing / Getting started
+
+You will need NodeJS >= 8.1.1
+You will need either a local instance of Mongo >= 3.4.13 or a free mLab instance
+Replace 'your-mongoURI-here' with your mongoURI
+
+```shell
+git clone https://github.com/NisanthanNanthakumar/backend-challenge.git
+
+cd backend-challenge
+
+cd server
+
+npm install
+
+cd config
+
+touch dev.js
+
+echo "module.exports = {
+  mongoURI:
+    'your-mongoURI-here'
+};" > dev.js
+
+
+npm start
+```
+
+alternatively for dev, instead of ``` npm start```
+
+```shell
+npm install -g nodemon
+
+npm run server
+```
+
+## Tests
+
+```shell
+npm run tests
+```
 
 ## Your Quest
 
