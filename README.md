@@ -35,13 +35,17 @@ echo "module.exports = {
 npm start
 ```
 
-alternatively for dev, instead of ``` npm start```
+This starts up a local server on port 5000. Navigate to [http://localhost:5000](http://localhost:5000).
+
+Alternatively for dev, instead of ``` npm start```
 
 ```shell
 npm install -g nodemon
 
 npm run server
 ```
+
+Local server is still on port 5000. Navigate to [http://localhost:5000](http://localhost:5000).
 
 ## Tests
 
