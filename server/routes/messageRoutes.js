@@ -12,7 +12,8 @@ module.exports = app => {
     Conversation.findById(conversation_id)
       .then(conversation => {
         let newMessage = { sender, message };
-        conversation.messages.push(newMessage);
+        let { messages } = conversation
+        conversation.messages = [...messages, newMessage]
         return conversation.save();
       })
       .then(conversation => {
