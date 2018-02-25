@@ -8,8 +8,10 @@ This is our challenge for potential new backend developer team members. We'd lik
 ## Installing / Getting started
 
 You will need NodeJS >= 8.1.1
-You will need either a local instance of Mongo >= 3.4.13 or a free mLab instance
-Replace 'your-mongoURI-here' with your mongoURI
+
+You will need either a local instance of Mongo >= 3.4.13 or a free mLab instance.
+
+Replace 'your-mongoURI-here' with your mongoURI.
 
 ```shell
 git clone https://github.com/NisanthanNanthakumar/backend-challenge.git
