@@ -58,6 +58,8 @@ Your solution should start an HTTP service on any port you'd like. Please includ
 
 **Method** `Post`
 
+**URL Params** None
+
 **Data Params** 
 
 ```javascript
@@ -98,6 +100,8 @@ Status Code: **400**
 **Url** `/api/v1/converstaions/:conversation_id`
 
 **Method** `Get`
+
+**URL Params** None
 
 **Data Params** None
 
@@ -142,6 +146,8 @@ Status Code: **400**
 **Url** `/api/v1/conversations/`
 
 **Method** `Post`
+
+**URL Params** None
 
 **Data Params** None
 
